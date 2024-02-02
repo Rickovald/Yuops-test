@@ -2,3 +2,25 @@
 
 .root
 	@include PageWrapper
+
+.ships_head
+	@include H3Bold
+
+.spacecrafts
+	@include FlexWrapper
+	gap: 10px
+
+.spacecraft
+	max-width: 30%
+	border-radius: 8px
+	padding: 4px 4px 8px 4px
+	box-shadow: 0px 0px 15px -7px black
+	&__kitty
+		border-radius: 4px
+		max-width: 100%
+	&__name
+		@include P4Regular
+		padding: 5px 0
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis

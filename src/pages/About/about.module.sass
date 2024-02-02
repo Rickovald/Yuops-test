@@ -2,3 +2,25 @@
 
 .root
 	@include PageWrapper
+
+.ship__label
+	padding-top: 10px
+	color: $LightTextColor
+
+.characteristics, .films
+	@include FlexWrapper
+.films
+	justify-content: flex-start
+	gap: 10px
+.film
+	max-width: 20%
+	flex-wrap: nowrap
+	.spacecraft__kitty
+		border-radius: 4px
+		max-width: 100%
+	p
+		@include P4Regular
+		padding: 5px 0
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
